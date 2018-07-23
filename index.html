@@ -1,139 +1,152 @@
 <!doctype html>
 <html>
-    <head>
-        <title>PVD</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
-        <link rel="shortcut icon" href="http://www.providenceri.gov/wp-content/uploads/2016/01/square-p-01-copy.png">
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container">
-                <select class="selectpicker" data-width="fit">
+<!-- TL I applied code formatting to this to make it easier to read --> 
+<head>
+    <title>PVD</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="http://www.providenceri.gov/wp-content/uploads/2016/01/square-p-01-copy.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <select class="selectpicker" data-width="fit">
    <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
  <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
 </select>
-                <div class="col-sm">
-                    <p class="navbar-text" style="color: orange; margin: 0; text-align: center;">CITY OF PROVIDENCE</p>
-                </div>
-                <div class="col-sm">
-                        <img class="center-block" style="margin: 0;" src="http://bit.ly/pvdlogo">
-                    </div>
+            <div class="col-sm">
+                <p class="navbar-text" style="color: orange; margin: 0; text-align: center;">CITY OF PROVIDENCE</p>
             </div>
             <div class="col-sm">
-                <p style="text-align: center; margin: 0;">MAYOR JORGE 0. ELORZA</p>
+                <img class="center-block" style="margin: 0;" src="http://bit.ly/pvdlogo">
             </div>
-         </nav>
-        <style>
-    .btn dropdown-toggle:hover {background-color: #ddd;}
+        </div>
+        <div class="col-sm">
+            <p style="text-align: center; margin: 0;">MAYOR JORGE 0. ELORZA</p>
+            <!-- TL I am not sure why we are text align center here, when text align right actually makes it fit into the screen better. -->
+        </div>
+    </nav>
+    <!-- TL I would put this style section up top so that it would be easier to find. Else this is kind of like inline style -->
+    <style>
+        .btn dropdown-toggle:hover {
+            background-color: #ddd;
+        }
 
-.dropdown:hover .dropdown-menu {display: block;}
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
 
-.dropdown:hover .dropdown-menu {background-color: white;}
-        </style>
-        
-        <nav class="nav nav-fill bg-grey">
-            <div class="dropdown">
-  <a class="btn dropdown-toggle" style="margin-right: 5em; margin-left: 1.5em" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        .dropdown:hover .dropdown-menu {
+            background-color: white;
+        }
+    </style>
+    <!-- TL I would also format it differently, so that each class was below the next. I suppose alphabetical makes sesnse too, though I didn't do that with mine. -->
+
+    <nav class="nav nav-fill bg-grey">
+        <div class="dropdown">
+            <a class="btn dropdown-toggle" style="margin-right: 5em; margin-left: 1.5em" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     CITY HALL
   </a>
 
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="http://www.providenceri.gov/i-want-to/">I Want to...</a>
-    <a class="dropdown-item" href="http://www.providenceri.gov/mayors-office/">Mayor's Office</a>
-    <a class="dropdown-item" href="http://www.providenceri.gov/departments/">Departments</a>
-    <a class="dropdown-item" href="http://council.providenceri.com/">City Council</a>
-    <a class="dropdown-item" href="https://library.municode.com/ri/providence/codes/code_of_ordinances">Code of Ordinances</a>
-  </div>
-</div>
-
-<div class="dropdown">
-  <a class="btn dropdown-toggle" style="margin-left: 4em; margin-right: 2em" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    DOING BUSINESS
-  </a>
-
-  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    <a class="dropdown-item" href="http://www.providenceeconomicdevelopment.net/business-portal/index.php">Starting a Business</a>
-    <a class="dropdown-item" href="#">Construction</a>
-    <a class="dropdown-item" href="#">Running a Business</a>
-    <a class="dropdown-item" href="http://www.providenceri.gov/ethics/">Ethics</a>
-  </div>
-</div>
-        
-            <a class="nav-item nav-link" href="#">EVENTS</a>
-            <a class="nav-item nav-link" href="#">NEWS</a>
-            <a class="nav-item nav-link" href="#">PVD 311</a>
-            <a class="nav-item nav-link" href="#">EXPLORE</a>
-        </nav>
-        
-        
-        <section class="home-hero" style="background-image: url(http://bit.ly/pvdskylines); height: 300px; background-size: cover; background-position-x: 50%; background-position-y: center;"></section>
-        <div class="container">
-            <div class="container">
-                <div class="row" style="margin-top: 25px;">
-                    <div class="col-sm">
-                        <h4 style="text-align: center;">What Can We Help You With?</h4>
-                        <button type="button" class="btn btn-lg" style="width: 100%; background-color: orange; border: none; border-radius: none;">I WANT TO...</button>
-                        <div class="card" style="background-color: #005d73; color: white;">
-                   <div class="card-body">
-                       <h5 class="card-title" style="text-align: center;">Top Requests</h5>
-                       <p class="card-text" style="color: grey;">
-                           <a href="http://www.providenceri.gov/collector/online-tax-payment-system/" target="_blank" style="color: grey;">Pay Taxes</a><br/>
-                           <a href="http://p7cdn4static.sharpschool.com/UserFiles/Servers/Server_92164/Image/News%20Images/Are%20You%20Ready%20for%20Snow-.png" target="_blank" style="color:grey;">Snow Ready</a><br/>
-                           <a href="https://wmq.etimspayments.com/pbw/include/providence/input.jsp" target="_blank" style="color: grey;">Pay my Parking Ticket</a><br/>
-                           <a href="http://www.providenceri.gov/pvd-311/" target="_blank" style="color: grey;">Report a Problem</a><br/>
-                           <a href="http://www.providenceri.gov/oeo/" target="_blank" style="color: grey;">Job Opportunities</a><br/>
-                           <a href="http://www.providenceri.gov/inspection-standards/" target="_blank" style="color: grey;">Inspections + Standards<a/><br/>
-                           <a href="http://www.providenceri.gov/animal-control/adoptions/" target="_blank" style="color: grey;">Animal Adoption</a><br/>
-                           <a href="http://www.providenceri.gov/vital-records/" target="_blank" style="color: grey;">Marriage, Birth, Death Certificates</a><br/>
-                           <a href="http://www.providenceri.gov/purchasing/how-to-submit-a-bid/" target="_blank" style="color: grey;">How to Find RFP's + Submit a Bid</a>
-                       </p>
-                   </div>
-               </div>
-                        
-                    </div>
-                    <div class="col-sm">
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Mayor Elorza Announces Moody’s Upgrade of Providence’s Outlook to Stable from Negative</h5>
-                                <p class="card-text">PROVIDENCE, RI – Mayor Jorge Elorza today announced that Moody’s Investors Service has upgraded the City of Providence’s outlook to stable from negative. Moody’s also affirmed the City’s Baa1 general obligation rating and Baa2 lease ratings. According to the agency, the upgrade reflects Providence’s improved financial position, manageable fixed costs and growing economy.
-
-“Moody’s upgrade recognizes the progress we’ve made through our commitment to long-term planning and fiscal responsibility,” said Mayor Jorge O. Elorza. “We’re a city on the rise and while this is big news, we must continue to keep a close eye on our finances to keep Providence going strong.”
-
-In its report, Moody’s noted that Providence serves as a regional economic center and pointed to improved budgeting practices and a stabilizing financial position due to multiple years of positive operating performance. The City realized a $5.4 million operating surplus in fiscal year 2017, bringing its Operating Fund balance to $2.3 million. The analysis underscored the elimination of the City’s cumulative deficit three years ahead of its Combined Deficit Reduction Payment Plan schedule. A $3.5 million surplus is expected for fiscal year 2018 for additional growth to reserves.
-
-Other factors considered included pension savings achieved through multiple years of early payments of the city’s ARC; improvement in funding for long-term liabilities; a growing tax base with growing economic development; and decline in unemployment.
-
-In 2016, Fitch Ratings upgraded the City’s outstanding General Obligation (GO) Bonds to ‘A-‘ and assigned a ‘stable’ outlook. Fitch also upgraded Providence’s Issuer Default Rating (IDR) to ‘BBB’ from ‘BBB-‘.</p>
-                                <a href="#" class="card-link">MORE</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div class="col-sm">
-                     <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">Mayor Elorza Announces Appointment to United States Conference of Mayors Board of Trustees</h5>
-                                <p class="card-text">PROVIDENCE, RI – Mayor Jorge O. Elorza today announced he has been appointed to the Board of Trustees of the U.S. Conference of Mayors (USCM), the top tier of leadership positions within the organization, which held its 86th annual meeting in Boston from June 8 through June 11. Mayor Elorza joins Boston (MA) Mayor Martin J. Walsh as the USCM’s newest Trustees who, along with the top three officers and past presidents, make up the Executive Committee of the organization.
-
-“I am proud to be elected to this leadership position and I thank my fellow mayors for their support,” said Mayor Elorza. “Mayors across the country are stepping up to tackle frontline issues in America in ways that are results-oriented and bi-partisan. While the divisive forces that seek to separate us from one another seemingly grow stronger every day, it is our unique role as mayors to tackle the issues in a way that brings our residents together.”
-
-During the conference, more than 250 mayors discussed a wide variety of bipartisan priorities that contribute to the overall health of America’s cities, as well as considered and adopted the policy resolutions that guide the national advocacy agenda of the organization. The policy positions adopted at the annual meeting collectively represent the views of the nation’s mayors and are distributed to the President of the United States and Congress.
-
-In his new role as trustee, Mayor Elorza will continue to lead on issues of economic opportunity, equity and inequality in Providence and among his colleagues nationwide. He currently serves as Vice Chair of the Standing Committee on Community Development and Housing and Co-chair of the USCM Immigration Reform Task Force that has urged Congress to pass the Dream Act and has discussed immigration issues with Attorney General Jeff Sessions and former Department of Homeland Security Secretary and current White House Chief of Staff General John Kelly.
-
-Earlier this year, Providence was one of only six cities nationwide to be recognized during the 2018 Childhood Obesity Prevention Awards at the USCM’s 86th Winter Meeting in Washington D.C. The awards went to cities with “outstanding programs that encourage healthy weight through balanced diet choices and regular physical activity.” Providence was awarded a $25,000 grant for its program Eat Play Learn PVD, which targets underrepresented youth and aims to provide greater access for the target populations to summer camps, summer meals, and learning opportunities that will address both childhood obesity and school readiness.</p>
-                                <a href="#" class="card-link">MORE</a>
-                            </div>
-                        </div>
-                    
-                </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="http://www.providenceri.gov/i-want-to/">I Want to...</a>
+                <a class="dropdown-item" href="http://www.providenceri.gov/mayors-office/">Mayor's Office</a>
+                <a class="dropdown-item" href="http://www.providenceri.gov/departments/">Departments</a>
+                <a class="dropdown-item" href="http://council.providenceri.com/">City Council</a>
+                <a class="dropdown-item" href="https://library.municode.com/ri/providence/codes/code_of_ordinances">Code of Ordinances</a>
             </div>
         </div>
-            
+
+        <div class="dropdown">
+            <a class="btn dropdown-toggle" style="margin-left: 4em; margin-right: 2em" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    DOING BUSINESS
+  </a> 
+  <!-- TLInteresting use of margins to work with the toggle bar spacing in the nav bar -->
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="http://www.providenceeconomicdevelopment.net/business-portal/index.php">Starting a Business</a>
+                <a class="dropdown-item" href="#">Construction</a>
+                <a class="dropdown-item" href="#">Running a Business</a>
+                <a class="dropdown-item" href="http://www.providenceri.gov/ethics/">Ethics</a>
+            </div>
         </div>
-    </body>
+
+        <a class="nav-item nav-link" href="#">EVENTS</a>
+        <a class="nav-item nav-link" href="#">NEWS</a>
+        <a class="nav-item nav-link" href="#">PVD 311</a>
+        <a class="nav-item nav-link" href="#">EXPLORE</a>
+    </nav>
+
+
+    <section class="home-hero" style="background-image: url(http://bit.ly/pvdskylines); height: 300px; background-size: cover; background-position-x: 50%; background-position-y: center;"></section>
+  <!--  <div class="container">  TL two containers  Commented this one out to see what happens.-->
+    <div class="container">
+        <div class="row" style="margin-top: 25px;">
+            <div class="col-sm">
+                <h4 style="text-align: center;">What Can We Help You With?</h4>
+                <button type="button" class="btn btn-lg" style="width: 100%; background-color: orange; border: none; border-radius: none;">I WANT TO...</button>
+                <div class="card" style="background-color: #005d73; color: white;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="text-align: center;">Top Requests</h5>
+                        <p class="card-text" style="color: grey;">
+                            <a href="http://www.providenceri.gov/collector/online-tax-payment-system/" target="_blank" style="color: grey;">Pay Taxes</a><br/>
+                            <a href="http://p7cdn4static.sharpschool.com/UserFiles/Servers/Server_92164/Image/News%20Images/Are%20You%20Ready%20for%20Snow-.png" target="_blank" style="color:grey;">Snow Ready</a><br/>
+                            <a href="https://wmq.etimspayments.com/pbw/include/providence/input.jsp" target="_blank" style="color: grey;">Pay my Parking Ticket</a><br/>
+                            <a href="http://www.providenceri.gov/pvd-311/" target="_blank" style="color: grey;">Report a Problem</a><br/>
+                            <a href="http://www.providenceri.gov/oeo/" target="_blank" style="color: grey;">Job Opportunities</a><br/>
+                            <a href="http://www.providenceri.gov/inspection-standards/" target="_blank" style="color: grey;">Inspections + Standards<a/><br/>
+                            <a href="http://www.providenceri.gov/animal-control/adoptions/" target="_blank" style="color: grey;">Animal Adoption</a><br/>
+                            <a href="http://www.providenceri.gov/vital-records/" target="_blank" style="color: grey;">Marriage, Birth, Death Certificates</a><br/>
+                            <a href="http://www.providenceri.gov/purchasing/how-to-submit-a-bid/" target="_blank" style="color: grey;">How to Find RFP's + Submit a Bid</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mayor Elorza Announces Moody’s Upgrade of Providence’s Outlook to Stable from Negative</h5>
+                        <p class="card-text">PROVIDENCE, RI – Mayor Jorge Elorza today announced that Moody’s Investors Service has upgraded the City of Providence’s outlook to stable from negative. Moody’s also affirmed the City’s Baa1 general obligation rating and Baa2
+                                lease ratings. According to the agency, the upgrade reflects Providence’s improved financial position, manageable fixed costs and growing economy. “Moody’s upgrade recognizes the progress we’ve made through our commitment
+                                to long-term planning and fiscal responsibility,” said Mayor Jorge O. Elorza. “We’re a city on the rise and while this is big news, we must continue to keep a close eye on our finances to keep Providence going strong.”
+                                In its report, Moody’s noted that Providence serves as a regional economic center and pointed to improved budgeting practices and a stabilizing financial position due to multiple years of positive operating performance.
+                                The City realized a $5.4 million operating surplus in fiscal year 2017, bringing its Operating Fund balance to $2.3 million. The analysis underscored the elimination of the City’s cumulative deficit three years ahead of
+                                its Combined Deficit Reduction Payment Plan schedule. A $3.5 million surplus is expected for fiscal year 2018 for additional growth to reserves. Other factors considered included pension savings achieved through multiple
+                                years of early payments of the city’s ARC; improvement in funding for long-term liabilities; a growing tax base with growing economic development; and decline in unemployment. In 2016, Fitch Ratings upgraded the City’s
+                                outstanding General Obligation (GO) Bonds to ‘A-‘ and assigned a ‘stable’ outlook. Fitch also upgraded Providence’s Issuer Default Rating (IDR) to ‘BBB’ from ‘BBB-‘.</p>
+                        <a href="#" class="card-link">MORE</a>
+                    </div>
+                </div>
+            </div>
+      <!-- this closed div is extra unless you are trying to make a new row  </div> -->
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mayor Elorza Announces Appointment to United States Conference of Mayors Board of Trustees</h5>
+                        <p class="card-text">PROVIDENCE, RI – Mayor Jorge O. Elorza today announced he has been appointed to the Board of Trustees of the U.S. Conference of Mayors (USCM), the top tier of leadership positions within the organization, which held its 86th annual
+                            meeting in Boston from June 8 through June 11. Mayor Elorza joins Boston (MA) Mayor Martin J. Walsh as the USCM’s newest Trustees who, along with the top three officers and past presidents, make up the Executive Committee of
+                            the organization. “I am proud to be elected to this leadership position and I thank my fellow mayors for their support,” said Mayor Elorza. “Mayors across the country are stepping up to tackle frontline issues in America in
+                            ways that are results-oriented and bi-partisan. While the divisive forces that seek to separate us from one another seemingly grow stronger every day, it is our unique role as mayors to tackle the issues in a way that brings
+                            our residents together.” During the conference, more than 250 mayors discussed a wide variety of bipartisan priorities that contribute to the overall health of America’s cities, as well as considered and adopted the policy
+                            resolutions that guide the national advocacy agenda of the organization. The policy positions adopted at the annual meeting collectively represent the views of the nation’s mayors and are distributed to the President of the
+                            United States and Congress. In his new role as trustee, Mayor Elorza will continue to lead on issues of economic opportunity, equity and inequality in Providence and among his colleagues nationwide. He currently serves as Vice
+                            Chair of the Standing Committee on Community Development and Housing and Co-chair of the USCM Immigration Reform Task Force that has urged Congress to pass the Dream Act and has discussed immigration issues with Attorney General
+                            Jeff Sessions and former Department of Homeland Security Secretary and current White House Chief of Staff General John Kelly. Earlier this year, Providence was one of only six cities nationwide to be recognized during the 2018
+                            Childhood Obesity Prevention Awards at the USCM’s 86th Winter Meeting in Washington D.C. The awards went to cities with “outstanding programs that encourage healthy weight through balanced diet choices and regular physical
+                            activity.” Providence was awarded a $25,000 grant for its program Eat Play Learn PVD, which targets underrepresented youth and aims to provide greater access for the target populations to summer camps, summer meals, and learning
+                            opportunities that will address both childhood obesity and school readiness.</p>
+                        <a href="#" class="card-link">MORE</a>
+<!-- TL Just going to comment here to count the closing divs -->                    
+                    </div> <!-- TL card body -->
+                </div> <!-- Tl card -->
+            </div> <!-- TL column -->
+        </div> <!-- TL row -->
+    </div> <!-- TL container -->
+
+ <!-- TL Another extra closing div   </div> -->
+</body>
+
 </html>
